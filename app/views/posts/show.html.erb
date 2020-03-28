@@ -9,3 +9,6 @@
   <strong>Text:</strong>
   <%= @post.text %>
 </p>
+
+<%= link_to "Show Comments",comments_path %>
+<%= link_to "Add Comment", new_comment_path(post_id: @post.id) %>
